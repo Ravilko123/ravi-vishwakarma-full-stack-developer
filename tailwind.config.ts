@@ -57,6 +57,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        meal: {
+          breakfast: "hsl(var(--meal-breakfast))",
+          lunch: "hsl(var(--meal-lunch))",
+          "happy-hour": "hsl(var(--meal-happy-hour))",
+          snack: "hsl(var(--meal-snack))",
+        },
+        calendar: {
+          today: "hsl(var(--calendar-today))",
+          hover: "hsl(var(--calendar-hover))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

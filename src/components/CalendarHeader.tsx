@@ -8,6 +8,7 @@ interface CalendarHeaderProps {
   onNextMonth: () => void;
   onToday: () => void;
   onNewMeal: () => void;
+  onExport: () => void;
   view: "day" | "week" | "month";
   onViewChange: (view: "day" | "week" | "month") => void;
 }
@@ -23,6 +24,7 @@ export function CalendarHeader({
   onNextMonth,
   onToday,
   onNewMeal,
+  onExport,
   view,
   onViewChange,
 }: CalendarHeaderProps) {
@@ -79,6 +81,11 @@ export function CalendarHeader({
             <ChevronsRight className="h-4 w-4" />
           </Button>
         </div>
+
+        <Button variant="outline" size="sm" className="h-8 gap-1.5" onClick={onExport}>
+          <Download className="h-3.5 w-3.5" />
+          Export
+        </Button>
 
         <Button size="sm" className="h-8 gap-1.5" onClick={onNewMeal}>
           <Plus className="h-3.5 w-3.5" />

@@ -5,6 +5,7 @@ import { CalendarHeader } from "@/components/CalendarHeader";
 import { CalendarGrid } from "@/components/CalendarGrid";
 import { MealDetailPanel } from "@/components/MealDetailPanel";
 import { DayMeals, MealItem, generateInitialMeals, getDateKey } from "@/lib/meal-data";
+import { exportMealsToExcel } from "@/lib/export-meals";
 
 const Index = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -48,6 +49,15 @@ const Index = () => {
     setSelectedDate(key);
   }, [selectedDate]);
 
+  const handleExport = useCallback(() => {
+    const monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December",
+    ];
+    const label = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+    exportMealsToExcel(meals, label);
+  }, [meals, currentDate]);
+
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <AppNavbar />
@@ -60,6 +70,7 @@ const Index = () => {
           onNextMonth={handleNextMonth}
           onToday={handleToday}
           onNewMeal={handleNewMeal}
+          onExport={handleExport}
           view={view}
           onViewChange={setView}
         />

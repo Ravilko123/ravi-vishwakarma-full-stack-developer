@@ -14,10 +14,10 @@ import raviImg from "@/assets/ravi.png";
 
 const skills = {
   Frontend: ["Angular", "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "Bootstrap", "jQuery", "Taiga UI"],
-  Backend: ["ASP.NET Core Web API", "ASP.NET MVC", "C#", ".NET 9", "Web Services", "REST APIs"],
-  Database: ["SQL Server 2021", "T-SQL", "Stored Procedures", "RDLC Reports"],
-  "AI Integration": ["ChatGPT API", "Gemini API", "Prompt Engineering", "JD Parsing"],
-  Tools: ["Git", "Bitbucket", "Swagger", "Chrome Extensions", "AJAX", "Visual Studio"],
+  Backend: ["Python","ASP.NET Core Web API", "ASP.NET MVC", "C#", ".NET", "Web Services", "REST APIs"],
+  Database: ["SQL Server 2021", "Stored Procedures", "RDLC Reports"],
+  "AI Integration": ["ChatGPT API", "Prompt Engineering", "JD Parsing"],
+  Tools: ["Git", "Bitbucket", "Swagger","Postman", "Chrome Extensions", "AJAX", "Visual Studio"],
 };
 
 const experiences = [
@@ -27,7 +27,7 @@ const experiences = [
     period: "Mar 2024 – Present",
     points: [
       "Lead Angular development for the Nobel House (NH) job portal connecting consultants, candidates, and corporates.",
-      "Integrated ChatGPT & Gemini APIs to extract skills, industries, and experience from job descriptions.",
+      "Integrated ChatGPT APIs to extract skills, industries, and experience from job descriptions.",
       "Architected reusable Angular libraries to accelerate delivery across multiple products.",
     ],
   },
@@ -74,7 +74,7 @@ const projects = [
   {
     name: "Nobel House (NH)",
     desc: "Job portal where consultants post jobs, candidates apply, and corporates filter profiles by skills & experience.",
-    stack: ["Angular", "Taiga UI", "Tailwind", "TypeScript", "ChatGPT", "Gemini"],
+    stack: ["Angular", "Taiga UI", "Tailwind", "TypeScript", "ChatGPT"],
     features: ["AI-powered JD parsing", "Smart candidate filtering", "Multi-role dashboard"],
     accent: "from-primary to-accent",
   },
@@ -189,12 +189,12 @@ const Index = () => {
               Hi, I'm <span className="gradient-text">Ravi Vishwakarma</span>
             </h1>
             <h2 className="mt-3 text-xl font-semibold text-muted-foreground sm:text-2xl">
-              Full Stack Developer · Angular + .NET · AI Integrations
+              Full Stack Developer · Angular· React + .NET · AI Integrations
             </h2>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               8+ years crafting modern web platforms — from enterprise dashboards and job portals to
-              AI-powered tools using <span className="text-foreground">ChatGPT</span> &{" "}
-              <span className="text-foreground">Gemini</span>. I build fast, scalable, beautifully
+              AI-powered tools using <span className="text-foreground">ChatGPT</span>{" "}
+              <span className="text-foreground"></span>. I build fast, scalable, beautifully
               engineered products end-to-end.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -258,15 +258,15 @@ const Index = () => {
             with <span className="text-foreground font-semibold">ASP.NET Core Web APIs</span> and{" "}
             <span className="text-foreground font-semibold">SQL Server</span> on the back end. I love
             turning vague briefs into clean, scalable products — and recently I've been deeply focused
-            on integrating <span className="text-foreground font-semibold">ChatGPT</span> and{" "}
-            <span className="text-foreground font-semibold">Gemini</span> to ship real AI features
+            on integrating <span className="text-foreground font-semibold">ChatGPT</span> {" "}
+            <span className="text-foreground font-semibold"></span> to ship real AI features
             users feel.
           </p>
           <div className="mt-6 grid gap-4 sm:grid-cols-3">
             {[
               { k: "8+", v: "Years building web" },
               { k: "15+", v: "Production projects" },
-              { k: "AI", v: "ChatGPT + Gemini" },
+              { k: "AI", v: "ChatGPT" },
             ].map((s) => (
               <div key={s.v} className="rounded-xl border border-border bg-secondary/40 p-5 text-center">
                 <p className="text-2xl font-bold gradient-text">{s.k}</p>
@@ -394,7 +394,8 @@ const Index = () => {
           <Card className="glass p-6 shadow-card">
             <h3 className="text-lg font-semibold">Get in touch</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Open to full-time roles, freelance and AI-powered product work. I usually reply within 24 hours.
+              {/* Open to full-time roles, freelance and AI-powered product work. I usually reply within 24 hours. */}
+              Open to collaboration on web and AI-based projects. Feel free to reach out — response within 24 hours.
             </p>
             <div className="mt-6 space-y-3 text-sm">
               <a href="mailto:ravisharmabca@gmail.com" className="flex items-center gap-3 hover:text-primary transition-colors">
@@ -455,7 +456,7 @@ const Index = () => {
       </section>
 
       <footer className="border-t border-border py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} Ravi Vishwakarma · Crafted with care.
+        © {new Date().getFullYear()} Ravi Vishwakarma. All rights reserved.
       </footer>
     </div>
   );

@@ -13,11 +13,11 @@ import {
 import raviImg from "@/assets/ravi.png";
 
 const skills = {
-  Frontend: ["Angular", "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "Bootstrap", "jQuery", "Taiga UI"],
-  Backend: ["Python","ASP.NET Core Web API", "ASP.NET MVC", "C#", ".NET", "Web Services", "REST APIs"],
-  Database: ["SQL Server 2021", "Stored Procedures", "RDLC Reports"],
+  Frontend: ["Angular", "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "Bootstrap", "jQuery", "Taiga UI", "ECharts", "Chart.js", "angular-ng-autocomplete", "ng-multiselect-dropdown"],
+  Backend: ["Python", "ASP.NET Core Web API", "ASP.NET MVC", "ASP.NET 4.5", "C#", ".NET", "Web Services", "REST APIs"],
+  Database: ["SQL Server 2021", "SQL Server 2012", "Stored Procedures", "RDLC Reports"],
   "AI Integration": ["ChatGPT API", "Prompt Engineering", "JD Parsing"],
-  Tools: ["Git", "Bitbucket", "Swagger","Postman", "Chrome Extensions", "AJAX", "Visual Studio"],
+  Tools: ["Git", "Bitbucket", "Swagger", "Postman", "Chrome Extensions", "AJAX", "Visual Studio", "FileZilla"],
 };
 
 const experiences = [

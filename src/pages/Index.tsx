@@ -13,11 +13,11 @@ import {
 import raviImg from "@/assets/ravi.png";
 
 const skills = {
-  Frontend: ["Angular", "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "Bootstrap", "jQuery", "Taiga UI"],
-  Backend: ["Python","ASP.NET Core Web API", "ASP.NET MVC", "C#", ".NET", "Web Services", "REST APIs"],
-  Database: ["SQL Server 2021", "Stored Procedures", "RDLC Reports"],
+  Frontend: ["Angular", "React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind", "Bootstrap", "jQuery", "Taiga UI", "ECharts", "Chart.js", "angular-ng-autocomplete", "ng-multiselect-dropdown"],
+  Backend: ["Python", "ASP.NET Core Web API", "ASP.NET MVC", "ASP.NET 4.5", "C#", ".NET", "Web Services", "REST APIs"],
+  Database: ["SQL Server 2021", "SQL Server 2012", "Stored Procedures", "RDLC Reports"],
   "AI Integration": ["ChatGPT API", "Prompt Engineering", "JD Parsing"],
-  Tools: ["Git", "Bitbucket", "Swagger","Postman", "Chrome Extensions", "AJAX", "Visual Studio"],
+  Tools: ["Git", "Bitbucket", "Swagger", "Postman", "Chrome Extensions", "AJAX", "Visual Studio", "FileZilla"],
 };
 
 const experiences = [
@@ -126,6 +126,55 @@ const projects = [
     stack: ["C#", "ASP.NET", "SQL Server", "jQuery", "RDLC"],
     features: ["Global lab network", "Stock tracking", "Sales/purchase reports"],
     accent: "from-accent to-primary",
+  },
+  {
+    name: "Exam Portal",
+    desc: "Web platform to organize and conduct optional student exams with secure database-driven workflows.",
+    stack: ["C#", "ASP.NET 4.5", "SQL Server 2012", "jQuery", "JavaScript"],
+    features: ["Exam scheduling", "Stored procedures & tables", "Team-coordinated deployments via FileZilla"],
+    accent: "from-primary to-accent",
+  },
+  {
+    name: "School Management System",
+    desc: "Information system to manage school data and transactions across multiple branches with role-based actors.",
+    stack: ["C#", "ASP.NET 4.5", "SQL Server 2012", "jQuery", "AJAX", "RDLC"],
+    features: ["Multi-branch support", "Students, staff & parent modules", "Custom UI templates per client"],
+    accent: "from-accent to-primary",
+  },
+  {
+    name: "Inventory (Windows Application)",
+    desc: "Inventory management software for tracking stock, orders, sales and generating purchase/sales documents.",
+    stack: ["C#", "ASP.NET 4.5", "SQL Server 2012", "Web Services", "RDLC"],
+    features: ["Stock & order tracking", "Sales & purchase docs", "RDLC business reports"],
+    accent: "from-primary to-accent",
+  },
+  {
+    name: "EFC (Expected Family Contribution)",
+    desc: "Calculator that provides Expected Family Contribution information with rich charts and dynamic forms.",
+    stack: ["Angular", "Taiga UI", "Tailwind", "TypeScript", "ECharts", "Chart.js"],
+    features: ["Multi-step calculator", "Autocomplete & multi-select inputs", "Real-time chart visualizations"],
+    accent: "from-accent to-primary",
+  },
+  {
+    name: "Platform Dashboard (SE / NPC)",
+    desc: "Dashboard displaying Scholarship Estimator and NPC total submission reports with interactive charts.",
+    stack: ["Angular", "Taiga UI", "Tailwind", "TypeScript", "ECharts", "Chart.js"],
+    features: ["Submission analytics", "SE & NPC reporting", "Interactive charts"],
+    accent: "from-primary to-accent",
+  },
+  {
+    name: "Top5 Subscription Dashboard",
+    desc: "Subscription product with Admin, Counselor and Student modules for managing and reviewing submissions.",
+    stack: ["Angular", "Taiga UI", "Tailwind", "TypeScript", "ECharts", "Chart.js"],
+    features: ["Role-based modules", "Activate/deactivate workflows", "Submission management"],
+    accent: "from-accent to-primary",
+  },
+  {
+    name: "Angular Shared Library",
+    desc: "Reusable internal Angular library powering shared components, forms and charts across multiple products.",
+    stack: ["Angular", "Taiga UI", "Tailwind", "TypeScript", "ECharts", "Chart.js"],
+    features: ["Reusable components", "Cross-product consistency", "Faster delivery"],
+    accent: "from-primary to-accent",
   },
 ];
 
